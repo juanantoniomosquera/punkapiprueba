@@ -20,4 +20,15 @@ class PunkApiController extends AbstractController
             'result' => $punkService->getBeersByFood($food, ['id', 'name', 'description'], $util)
         ]);
     }
+
+    /**
+     * @Route("/punk/api/searchfoodforview/{food}", name="punk_api_searchfoodforview")
+     */
+    public function searchFoodForView(Punk $punkService, Util $util, string $food): Response
+    {
+        return $this->json([
+            'message' => 'Data for view',
+            'result' => $punkService->getBeersByFood($food, ['id', 'name', 'description', 'tagline', 'image_url', 'first_brewed'], $util)
+        ]);
+    }
 }
