@@ -7,6 +7,11 @@
 * Git + gitflow extension [gitflow]
 * Docker
 
+## Endpoints de prueba
+
+* http://localhost:8000/punk/api/searchfood/carne
+* http://localhost:8000/punk/api/searchfoodforview/carne
+
 ## Notas
 
 * No uso gitflow en mi trabajo diario, se ha usado por primera vez en esta prueba. Se han creado las ramas de cada feature.
